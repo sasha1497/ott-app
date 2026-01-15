@@ -1,1 +1,1 @@
-# ott-app
+# ott-platform
