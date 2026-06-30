@@ -1,0 +1,47 @@
+{
+  "$schema": "https://json.schemastore.org/nest-cli",
+  "collection": "@nestjs/schematics",
+  "sourceRoot": "src",
+  "compilerOptions": {
+    "deleteOutDir": true,
+    "webpack": true
+  },
+  "projects": {
+    "db": {
+      "type": "library",
+      "root": "libs/db",
+      "entryFile": "index",
+      "sourceRoot": "libs/db/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/db/tsconfig.lib.json"
+      }
+    },
+    "payment": {
+      "type": "library",
+      "root": "libs/payment",
+      "entryFile": "index",
+      "sourceRoot": "libs/payment/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/payment/tsconfig.lib.json"
+      }
+    },
+    "user": {
+      "type": "library",
+      "root": "libs/user",
+      "entryFile": "index",
+      "sourceRoot": "libs/user/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/user/tsconfig.lib.json"
+      }
+    },
+    "videos": {
+      "type": "library",
+      "root": "libs/videos",
+      "entryFile": "index",
+      "sourceRoot": "libs/videos/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/videos/tsconfig.lib.json"
+      }
+    }
+  }
+}

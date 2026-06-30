@@ -1,0 +1,115 @@
+ott-platform/
+
+backend/
+
+    src/
+
+        main.ts
+
+        app.module.ts
+
+        config/
+
+            configuration.ts
+            database.config.ts
+            jwt.config.ts
+
+        common/
+
+            decorators/
+            filters/
+            guards/
+            interceptors/
+            middleware/
+            pipes/
+            utils/
+            constants/
+            enums/
+
+        database/
+
+            migrations/
+            seeds/
+            entities/
+
+        modules/
+
+            auth/
+
+                controllers/
+                services/
+                dto/
+                entities/
+                guards/
+                strategies/
+                auth.module.ts
+
+            users/
+
+                controllers/
+                services/
+                dto/
+                entities/
+                users.module.ts
+
+            admin/
+
+                controllers/
+                services/
+                dto/
+                admin.module.ts
+
+            videos/
+
+                controllers/
+                services/
+                dto/
+                entities/
+                upload/
+                streaming/
+                videos.module.ts
+
+            categories/
+
+                controllers/
+                services/
+                dto/
+                entities/
+
+            subscriptions/
+
+                controllers/
+                services/
+                dto/
+                entities/
+
+            payments/
+
+                controllers/
+                services/
+                dto/
+
+            watch-history/
+
+                controllers/
+                services/
+                dto/
+
+            favorites/
+
+                controllers/
+                services/
+                dto/
+
+            dashboard/
+
+                controllers/
+                services/
+
+        uploads/
+
+            videos/
+
+            thumbnails/
+
+            trailers/

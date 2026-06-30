@@ -1,0 +1,42 @@
+version: "3.9"
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: ott-postgres
+    restart: always
+
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: ott_platform
+
+    ports:
+      - "5432:5432"
+
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+    networks:
+      - ott-network
+
+  adminer:
+    image: adminer:latest
+    container_name: ott-adminer
+    restart: always
+
+    ports:
+      - "8080:8080"
+
+    depends_on:
+      - postgres
+
+    networks:
+      - ott-network
+
+volumes:
+  postgres_data:
+
+networks:
+  ott-network:
+    driver: bridge

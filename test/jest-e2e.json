@@ -1,0 +1,19 @@
+{
+  "moduleFileExtensions": [
+    "js",
+    "json",
+    "ts"
+  ],
+  "rootDir": ".",
+  "testEnvironment": "node",
+  "testRegex": ".e2e-spec.ts$",
+  "transform": {
+    "^.+\\.(t|j)s$": "ts-jest"
+  },
+  "moduleNameMapper": {
+    "^@app/db(|/.*)$": "<rootDir>/../libs/db/src/$1",
+    "^@app/payment(|/.*)$": "<rootDir>/../libs/payment/src/$1",
+    "^@app/user(|/.*)$": "<rootDir>/../libs/user/src/$1",
+    "^@app/videos(|/.*)$": "<rootDir>/../libs/videos/src/$1"
+  }
+}
